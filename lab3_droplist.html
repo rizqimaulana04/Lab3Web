@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pilihan Mata Kuliah Teknik Informatika</title>
+    <style>
+        form p > label {
+            display: inline-block;
+            width: 100px;
+        }
+        form input[type="text"], form textarea {
+            border: 1px solid #197a43;
+        }
+        form input[type="submit"] {
+            border: 1px solid #197a43;
+            background-color: #197a43;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pilih Mata Kuliah Teknik Informatika</h1>
+    <form action="proses_form.php" method="post">
+        <label for="semester">Pilih Semester:</label>
+        <select name="semester" id="semester">
+            <option value="semester1">Semester 1</option>
+            <option value="semester2">Semester 2</option>
+            <option value="semester3">Semester 3</option>
+            <option value="semester4">Semester 4</option>
+            <option value="semester5">Semester 5</option>
+            <option value="semester6">Semester 6</option>
+            <option value="semester7">Semester 7</option>
+            <option value="semester8">Semester 8</option>
+        </select>
+
+        <br><br>
+
+        <label for="matakuliah">Pilih Mata Kuliah (Multiple Selection):</label>
+        <select name="matakuliah[]" id="matakuliah" multiple="multiple">
+            <option value="pemrogramanweb">Pemrograman Web</option>
+            <option value="basisdata">Basis Data</option>
+            <option value="jaringankomputer">Jaringan Komputer</option>
+            <option value="sistemoperasi">Sistem Operasi</option>
+            <option value="kecerdasanbuatan">Kecerdasan Buatan</option>
+            <option value="grafikakomputer">Grafika Komputer</option>
+            <option value="teoribahasapemrograman">Teori Bahasa Pemrograman</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
